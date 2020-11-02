@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Rammetto One';
-    src: url('RammettoOne-Regular.woff') format('woff');
+    src: url('../fonts/RammettoOne-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

@@ -15,15 +15,17 @@
                     Standars
 ===================================================== */
 
+html { scroll-behavior: smooth; }
+
 /* Set the standard for all sections contents */
 
-section, p {
+header, footer, section, p, a {
     font-family: 'Poppins';
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
-    text-align: center;
     color: #626780;
+    text-decoration: none;
 }
 
 /* Set the standard for all sections titles */
@@ -54,20 +56,24 @@ section h3  {
 
 /* Logo */
 
-.logo {
+a.logo {
     font-family: 'Rammetto One';
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
 }
 
-.logo span {
+span.logo {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
+    color: #505050;
+    text-decoration: none;
+
 }
 
 /* Services box */
@@ -100,6 +106,14 @@ section h3  {
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 18px;
+    transition: all 0.5s ease-in-out;
+}
+
+.purple-button:hover {
+    background-color: #5e5e8b;
+    -webkit-box-shadow: 0px 0px 30px 0px #9B9BCA;
+    -moz-box-shadow: 0px 0px 30px 0px #9B9BCA;
+    box-shadow: 0px 0px 30px 0px #9B9BCA;
 }
 
 .red-button {
