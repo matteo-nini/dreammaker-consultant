@@ -1,0 +1,110 @@
+@import "fonts.css";
+
+/*
+=====================================================
+                        Reset
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+=====================================================
+                    Standars
+===================================================== */
+
+/* Set the standard for all sections contents */
+
+section, p {
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #626780;
+}
+
+/* Set the standard for all sections titles */
+
+section h1 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 140%;
+    color: #402B2B;
+}
+
+/* Set the standard for all sections subtitles */
+
+section h3  {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    color: #626780;
+}
+
+/*
+=====================================================
+                    Layout Elements
+===================================================== */
+
+/* Logo */
+
+.logo {
+    font-family: 'Rammetto One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.logo span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+/* Services box */
+
+.services__box {
+    width: 260px;
+    height: 250px;
+    padding: 10px;
+    margin: 0 40px;
+    text-align: center;
+    border: 0;
+    border-bottom: 0;
+    border-radius: 5px;
+    flex-direction: column;
+    transition: border-width 0.5s ease-in-out;
+}
+
+.services__box:hover {
+    border: 1px solid #C4C4C4;
+    border-bottom: 5px solid #C4C4C4;
+}
+
+/* Buttons */
+
+.purple-button { 
+    background-color: #9B9BCA;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.red-button {
+    background-color: #FD5540;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
