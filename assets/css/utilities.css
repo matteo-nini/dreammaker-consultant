@@ -3,27 +3,56 @@
                     Text Utilities
 ===================================================== */
 
-.uppercase { text-transform: uppercase; }
+.uppercase {
+  text-transform: uppercase;
+}
+.txt-center {
+  text-align: center;
+}
 
 /*
 =====================================================
                         Colors
 ===================================================== */
 
-.white { color: #FFF; }   /* Body color */
-.grey { color: #402B2B; }    /* Heading color */
-.red { color: #FD5540; }    /* Red text */
+.white {
+  color: #fff;
+}
+
+/* Body color */
+.grey {
+  color: #402b2b;
+} /* Heading color */
+.red {
+  color: #fd5540;
+} /* Red text */
 
 /*
 =====================================================
                         Layouts
 ===================================================== */
 
-.no-disp { display: none; }
+.no-disp {
+  display: none;
+}
 
-.siteCenter { width: 80%; margin: 0 ; }
+.containerCenter {
+  width: 85%;
+  margin: 0 auto;
+}
 
-.flex { display: flex; }
-.flex-col { flex-direction: column; }
-.flex-center-y { align-items: center; }
-.flex-center-x { justify-content: center; }
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-center-y {
+  align-items: center;
+}
+
+.flex-center-x {
+  justify-content: center;
+}

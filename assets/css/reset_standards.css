@@ -6,8 +6,8 @@
 ===================================================== */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -15,38 +15,44 @@
                     Standars
 ===================================================== */
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Set the standard for all sections contents */
 
-header, footer, section, p, a {
-    font-family: 'Poppins';
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    color: #626780;
-    text-decoration: none;
+header,
+footer,
+section,
+p,
+a {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #626780;
+  text-decoration: none;
 }
 
 /* Set the standard for all sections titles */
 
 section h1 {
-    font-family: 'PT Serif';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 140%;
-    color: #402B2B;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 140%;
+  color: #402b2b;
 }
 
 /* Set the standard for all sections subtitles */
 
-section h3  {
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 39px;
-    color: #626780;
+section h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  color: #626780;
 }
 
 /*
@@ -54,71 +60,94 @@ section h3  {
                     Layout Elements
 ===================================================== */
 
+/* Set the standard for all buttons */
+
+button {
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.5s ease-out;
+}
+
+button:hover,
+button:focus,
+button:active {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Purple buttons */
+
+.purple {
+  background-color: #9b9bca;
+}
+
+.purple:hover {
+  background-color: #5e5e8b;
+  /* box-shadow: 0px 0px 30px 0px #9b9bca; */
+}
+
+.purple:active {
+  background: linear-gradient(to top, #9b9bca 5%, #5e5e8b 100%);
+}
+
+/* Red buttons */
+
+.red {
+  background-color: #fd5540;
+}
+
 /* Logo */
 
 a.logo {
-    font-family: 'Rammetto One';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
+  font-family: "Rammetto One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
 }
 
 span.logo {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: #505050;
-    text-decoration: none;
-
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #505050;
+  text-decoration: none;
 }
 
 /* Services box */
 
 .services__box {
-    width: 260px;
-    height: 250px;
-    padding: 10px;
-    margin: 0 40px;
-    text-align: center;
-    border: 0;
-    border-bottom: 0;
-    border-radius: 5px;
-    flex-direction: column;
-    transition: border-width 0.5s ease-in-out;
+  width: 260px;
+  height: 250px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  border: 0;
+  border-bottom: 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: border-width 0.5s ease-in-out;
 }
 
 .services__box:hover {
-    border: 1px solid #C4C4C4;
-    border-bottom: 5px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
+  border-bottom: 5px solid #c4c4c4;
 }
 
-/* Buttons */
-
-.purple-button { 
-    background-color: #9B9BCA;
-    color: white;
-    border: 0;
-    border-radius: 10px;
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 18px;
-    transition: all 0.5s ease-in-out;
+.services__box h3 {
+  font-size: 22px;
 }
-
-.purple-button:hover {
-    background-color: #5e5e8b;
-    -webkit-box-shadow: 0px 0px 30px 0px #9B9BCA;
-    -moz-box-shadow: 0px 0px 30px 0px #9B9BCA;
-    box-shadow: 0px 0px 30px 0px #9B9BCA;
-}
-
-.red-button {
-    background-color: #FD5540;
-    color: white;
-    border: 0;
-    border-radius: 10px;
+.services__box p {
+  font-size: 16px;
 }

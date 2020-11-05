@@ -6,92 +6,104 @@
 ===================================================== */
 
 .landing {
-    width: 100%;
-    height: 100vh;
-    background: url('../images/webp/bg_home.webp');
-    background-position: left bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/webp/bg_home.webp");
+  background-position: left bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
 }
 
 /* Navbar */
 
 .landing__nav {
-    width: 100%;
-    height: 116px;  
-    min-width: 80%;
-    padding: 0 20px;
-    background: rgba(196, 196, 196, 0.1);
-    -webkit-box-shadow: inset 0px -5px 5px 0px rgba(255, 255, 255, 0.3);
-    -moz-box-shadow:    inset 0px -5px 5px 0px rgba(255, 255, 255, 0.3);
-    box-shadow:         inset 0px -5px 5px 0px rgba(255, 255, 255, 0.3);  
-    position: fixed;
-    top:0;
-    z-index: 1;
-    justify-content: space-evenly;
+  width: 100%;
+  height: 116px;
+  min-width: 80%;
+  padding: 0 20px;
+  background: rgba(196, 196, 196, 0.1);
+  -webkit-box-shadow: inset 0px -5px 5px 0px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0px -5px 5px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px -5px 5px 0px rgba(255, 255, 255, 0.3);
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  justify-content: space-evenly;
 }
 
 /* Navbar Logo */
 
 .landing__nav__logo__ellipse {
-    width: 72px;
-    height: 72px;
-    margin-right: 15px;
-    text-align: center;
-    line-height: 72px;
-    background-color: #c8c8c8;
-    border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  margin-right: 15px;
+  text-align: center;
+  line-height: 72px;
+  background-color: #c8c8c8;
+  border-radius: 50%;
 }
 
 /* Navbar links */
 
-.landing__nav__links ul { list-style-type: none; display: inline-flex; cursor: pointer; }
-.landing__nav__links ul li { padding: 0 29px; }
+.landing__nav__links ul {
+  list-style-type: none;
+  display: inline-flex;
+  cursor: pointer;
+}
 
-    /* Links Animation */
+.landing__nav__links ul li {
+  padding: 0 29px;
+}
 
-.landing__nav__links ul li a { 
-    background: linear-gradient(to right, #9B9BCA, #9B9BCA 50%, #5e5e8b 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 275ms ease;
- }
-.landing__nav__links ul li a:hover {  background-position: 0 100%; }
+/* Links Animation */
 
+.landing__nav__links ul li a {
+  background: linear-gradient(to right, #9b9bca, #9b9bca 50%, #5e5e8b 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.landing__nav__links ul li a:hover {
+  background-position: 0 100%;
+}
 
 /* Navbar Button */
 
-.landing__nav__links button { margin-left: 29px; }
+.landing__nav__links button {
+  margin-left: 29px;
+}
 
 .landing__button {
-    width: 234px;
-    height: 60px;
+  width: 234px;
+  height: 60px;
 }
 
 /* Landing page Content */
 
 .landing__content {
-    width: 700px;
-    padding: 0 10px;
-    margin: 0 180px;
-    text-align: left;
+  width: 700px;
+  padding: 0 10px;
+  margin: 0 180px;
+  text-align: left;
 }
 
 .landing__content h1 {
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 56px;
-    line-height: 100%;
-    margin-bottom: 30px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 100%;
+  margin-bottom: 30px;
 }
 
 .landing__content p {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /*
@@ -99,11 +111,24 @@
                     Services section
 ===================================================== */
 
-
 .services {
-    width: 100%;
-    height: 3000px;
-    z-index: 0;
+  width: 100%;
+  height: 3000px;
+  z-index: 0;
 }
 
+.navbar__background {
+  width: 100%;
+  height: 116px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ececec;
+  z-index: -1;
+}
 
+.services__content {
+  width: 746px;
+  height: auto;
+  margin: 95px auto 140px auto;
+}
