@@ -1,37 +1,65 @@
 @media (max-width: 767.98px) {
+  .landing {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
   .landing__nav {
     height: auto;
-    justify-content: space-around;
+    padding: 10px 30px;
+    justify-content: space-between;
+  }
+
+  .ellipse {
+    width: 0;
+    height: 0;
+    background: none;
+    line-height: normal;
+    margin-right: 0;
+  }
+
+  .landing__nav .logo--extended {
+    display: none;
   }
 
   .landing__nav__links {
     list-style-type: none;
     display: none;
-    text-align: center;
+    justify-content: center;
   }
 
   .landing__nav__links li {
     margin: 10px auto;
+    text-align: center;
   }
 
   .landing__nav__toogle {
     display: block;
     cursor: pointer;
-    color: #9b9bca;
+    color: #5e5e8b;
     font-size: 18px;
+    position: absolute;
+    right: 30px;
     align-items: center;
     justify-content: flex-end;
   }
 
   /* Added Class for JS Toogle Menu */
   .active {
+    width: auto;
+    height: auto;
     display: block;
+    margin: 0 auto;
+  }
+
+  .landing__content,
+  .services__content {
+    width: 70%;
+    text-align: center;
   }
 
   .landing__content {
-    width: 90%;
-    margin: auto auto;
-    text-align: center;
+    margin: 30px auto;
     align-items: center;
   }
 
