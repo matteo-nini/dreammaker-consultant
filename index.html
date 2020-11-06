@@ -14,32 +14,33 @@
     <link rel="icon" href="assets/images/svg/logo.svg">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/utilities.css">
-    <link rel="stylesheet" href="assets/css/reset_standards.css">
+    <link rel="stylesheet" href="assets/css/standards.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="assets/css/qwery.css">
 </head>
 <body>
     <!-- landing home section -->
     <a name="top"></a>
-    <header class="landing flex flex-center-y">
-            <nav class="landing__nav flex">
-                    <div class="landing__nav__logo flex flex-center-y">
-                        <div class="landing__nav__logo__ellipse">
-                            <a href="#top" name="logo" class="logo">DW</a>
-                        </div>
-                        <a href="#top" name="logo-span"><span class="logo">Dreammaker</span></a>
-                    </div>
-                    <div class="landing__nav__links flex flex-center-y">
-                        <ul>
-                            <li><a href="#top">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#Services">Services</a></li>
-                            <li><a href="#">Settings</a></li>
-                        </ul>
-                        <a href="#Contact"><button class="landing__button purple">Contact Us</button></a>
-                    </div>
-            </nav>
-            <div class="landing__content flex flex-col flex-center-x">
+    <header class="landing flex flex-col">
+        <nav class="landing__nav flex">
+            <div class="landing__nav__logo flex flex-center-y">
+                <div class="landing__nav__logo__ellipse">
+                    <a href="#top" name="logo" class="logo">DW</a>
+                </div>
+                <a href="#top" name="logo-span"><span class="logo">Dreammaker</span></a>
+            </div>
+            <ul class="landing__nav__links flex" id="navbar">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#Contact"><button class="landing__button purple">Contact Us</button></a></li>
+            </ul>
+            <span class="landing__nav__toogle" id="js-navbar-toggle">
+                MENU
+            </span>
+        </nav>
+        <div class="landing__content flex flex-col">
                 <h1>Your awesome Dream maker consultant</h1>
                 <p>
                     The occupational traffic permit is one of the most important things in the company 
@@ -47,12 +48,12 @@
                     doing business traffic at all. 
                 </p>
                 <a href="#Contact"><button class="landing__button purple">Contact Us</button></a>
-            </div>
+        </div>
+            <!--<div class="navbar__background"></div>-->
     </header>
 
     <!-- services section -->
     <section class="services">
-        <div class="navbar__background"></div>
         <div class="services__content txt-center">
             <h3>We provide great Service</h3>
             <p>The occupational traffic permit is one of the most important things in the company </p>
@@ -84,7 +85,16 @@
     </section>
 
     <!-- people section -->
-    <section class="people"></section>
+    <section class="people">
+        <div class="containerCenter flex flex-center-x">
+            .
+            <h3>The People are quick turnaround here</h3>
+            <p>The occupational traffic permit is one of the most 
+                things in the company How do you do when  
+                a commercial traffic permit for freight 
+                transport to your business? </p>
+        </div>
+    </section>
 
     <!-- video section -->
     <section class="video"></section>
@@ -103,6 +113,8 @@
 
     <!-- footer section -->
     <footer class="services"></section>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>

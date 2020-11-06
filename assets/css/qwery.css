@@ -1,0 +1,42 @@
+@media (max-width: 767.98px) {
+  .landing__nav {
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .landing__nav__links {
+    list-style-type: none;
+    display: none;
+    text-align: center;
+  }
+
+  .landing__nav__links li {
+    margin: 10px auto;
+  }
+
+  .landing__nav__toogle {
+    display: block;
+    cursor: pointer;
+    color: #9b9bca;
+    font-size: 18px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  /* Added Class for JS Toogle Menu */
+  .active {
+    display: block;
+  }
+
+  .landing__content {
+    width: 90%;
+    margin: auto auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .services .containerCenter {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

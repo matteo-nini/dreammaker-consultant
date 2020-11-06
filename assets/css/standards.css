@@ -60,6 +60,13 @@ section h3 {
                     Layout Elements
 ===================================================== */
 
+/* Set the dimension for center the website */
+
+.containerCenter {
+  width: 85%;
+  margin: 0 auto;
+}
+
 /* Set the standard for all buttons */
 
 button {
@@ -100,6 +107,15 @@ button:active {
 .red {
   background-color: #fd5540;
 }
+
+.red:hover {
+  background-color: #e64d3a;
+}
+
+.red:active {
+  background: linear-gradient(to top, #fd5540 5%, #e64d3a 100%);
+}
+
 
 /* Logo */
 

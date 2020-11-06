@@ -13,7 +13,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: 0;
+  overflow: hidden;
 }
 
 /* Navbar */
@@ -21,16 +21,13 @@
 .landing__nav {
   width: 100%;
   height: 116px;
-  min-width: 80%;
   padding: 0 20px;
   background: rgba(196, 196, 196, 0.1);
-  -webkit-box-shadow: inset 0px -5px 5px 0px rgba(255, 255, 255, 0.3);
-  -moz-box-shadow: inset 0px -5px 5px 0px rgba(255, 255, 255, 0.3);
-  box-shadow: inset 0px -5px 5px 0px rgba(255, 255, 255, 0.3);
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  z-index: 0;
+  left: 0; */
   justify-content: space-evenly;
+  align-items: center;
 }
 
 /* Navbar Logo */
@@ -47,19 +44,24 @@
 
 /* Navbar links */
 
-.landing__nav__links ul {
+.landing__nav__links {
   list-style-type: none;
   display: inline-flex;
   cursor: pointer;
+  align-items: center;
 }
 
-.landing__nav__links ul li {
+.landing__nav__links li {
   padding: 0 29px;
+}
+
+.landing__nav__toogle {
+  display: none;
 }
 
 /* Links Animation */
 
-.landing__nav__links ul li a {
+.landing__nav__links li:not(:last-child) {
   background: linear-gradient(to right, #9b9bca, #9b9bca 50%, #5e5e8b 50%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -67,17 +69,14 @@
   background-size: 200% 100%;
   background-position: 100%;
   transition: background-position 275ms ease;
+  z-index: 1;
 }
 
-.landing__nav__links ul li a:hover {
+.landing__nav__links li:not(:last-child):hover {
   background-position: 0 100%;
 }
 
 /* Navbar Button */
-
-.landing__nav__links button {
-  margin-left: 29px;
-}
 
 .landing__button {
   width: 234px;
@@ -89,7 +88,7 @@
 .landing__content {
   width: 700px;
   padding: 0 10px;
-  margin: 0 180px;
+  margin: auto 180px;
   text-align: left;
 }
 
@@ -114,21 +113,21 @@
 .services {
   width: 100%;
   height: 3000px;
-  z-index: 0;
 }
 
-.navbar__background {
+/* .navbar__background {
   width: 100%;
   height: 116px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ececec;
+  background-color: #000000;
   z-index: -1;
-}
+  opacity: 100%;
+} */
 
 .services__content {
-  width: 746px;
+  width: auto;
   height: auto;
   margin: 95px auto 140px auto;
 }
