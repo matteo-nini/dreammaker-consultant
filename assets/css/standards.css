@@ -16,14 +16,12 @@
 ===================================================== */
 
 html {
+  background-color: #ffffff;
   scroll-behavior: smooth;
 }
 
 /* Set the standard for all sections contents */
-header,
-section {
-  background-color: #ffffff;
-}
+
 header,
 footer,
 section,
@@ -46,6 +44,7 @@ section h1 {
   font-size: 48px;
   line-height: 140%;
   color: #402b2b;
+  margin-bottom: 30px;
 }
 
 /* Set the standard for all sections subtitles */

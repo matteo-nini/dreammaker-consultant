@@ -92,13 +92,34 @@
                 a commercial traffic permit for freight <br>
                 transport to your business? </p>
             </div>
+            <!--Div with people network background image. To code?-->
             <div class="people__network flex flex-center-y flex-center-x">
-                <img src="assets/images/jpg_png/people/people_network.png" alt="people network">
+                text
             </div>
     </section>
 
     <!-- video section -->
-    <section class="video"></section>
+    <section class="video">
+        <div class="containerCenter"><h1>First see how to expand <br> or our demo </h1></div>
+        <!--Video tag by code
+        <video controls poster="assets/images/webp/video_poster.webp" id="video">
+        </video>-->
+        <!--video tag code by image-->
+        <div class="video__poster flex flex-col flex-center-x flex-center-y">
+            <!-- controls of video tag works with javascript-->
+            <button id="playpause" title="play" onclick="togglePlayPause()"><i class="fas fa-play fa-3x"></i></button>
+            <div id="controls" class="flex flex-center-x flex-center-y">  
+                <img src="/assets/images/svg/icons/video_controls/prew.svg" alt="prew">
+                <img src="/assets/images/svg/icons/video_controls/play.svg" alt="play">
+                <img src="/assets/images/svg/icons/video_controls/next.svg" alt="next">
+                <div id="progressBar"><span id="progress"></span></div>
+                <img src="/assets/images/svg/icons/video_controls/repeat.svg" alt="repeat">
+                <img src="/assets/images/svg/icons/video_controls/shuffle.svg" alt="shuffle">
+            </div>
+        </div>
+        
+         
+    </section>
 
     <!-- Q&A section -->
     <section class="questions"></section>
