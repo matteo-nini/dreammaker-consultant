@@ -170,3 +170,36 @@ button:active {
 .services__box p {
   font-size: 16px;
 }
+
+.question__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+}
+
+.question {
+  color: #402b2b;
+  text-align: left;
+  width: 550px;
+  padding: 30px 20px;
+  background: #ffffff;
+  box-shadow: 0px 5px 10px #e0e0e0;
+  border-radius: 23px;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+.answer {
+  max-width: 510px;
+  /* height: 20px; */
+  line-height: 70px;
+  padding: 7px 20px;
+  overflow: hidden;
+  background: #f5f5ff;
+  box-shadow: 0px 25px 59px rgba(191, 191, 236, 0.72);
+  border-radius: 10px;
+  z-index: 0;
+  max-height: 0px;
+  transition: max-height 0.2s ease-out;
+}

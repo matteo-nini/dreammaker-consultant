@@ -51,7 +51,3 @@
 .flex-center-x {
   justify-content: center;
 }
-
-.animated {
-  transition: all 0.5s ease-out;
-}

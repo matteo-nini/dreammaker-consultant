@@ -157,6 +157,7 @@ video {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #playpause {
   width: 180px;
   height: 180px;
@@ -198,4 +199,53 @@ video {
   height: 8px;
   display: inline-block;
   border-radius: 0px 6px 6px 0px;
+}
+
+/*
+=====================================================
+                    Q&A section
+===================================================== */
+.questions {
+  width: 100vw;
+  height: auto;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.blob {
+  width: 150%;
+  float: right;
+  position: relative;
+  top: -200px;
+  right: -70px;
+  z-index: -1;
+  animation-delay: 0.5s;
+}
+
+.blob img {
+  position: relative;
+  top: -650px;
+  right: 0px;
+  display: block;
+  width: 530px;
+  height: 730px;
+  z-index: 0;
+}
+
+.questions .containerCenter {
+  position: relative;
+  top: 200px;
+}
+
+.questions__list {
+  transform: translate(0px, -970px);
+}
+
+.questions__button {
+  width: 550px;
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -700px;
 }
