@@ -20,7 +20,10 @@ html {
 }
 
 /* Set the standard for all sections contents */
-
+header,
+section {
+  background-color: #ffffff;
+}
 header,
 footer,
 section,
@@ -53,6 +56,7 @@ section h3 {
   font-size: 26px;
   line-height: 39px;
   color: #626780;
+  margin-bottom: 15px;
 }
 
 /*
