@@ -171,6 +171,17 @@ button:active {
   font-size: 16px;
 }
 
+/* Question Box */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  float: right;
+  margin-left: 5px;
+}
+
 .question__box {
   display: flex;
   flex-direction: column;
@@ -184,22 +195,39 @@ button:active {
   width: 550px;
   padding: 30px 20px;
   background: #ffffff;
-  box-shadow: 0px 5px 10px #e0e0e0;
   border-radius: 23px;
   z-index: 1;
   transition: 0.4s;
+  box-shadow: 0px 20px 40px #f5f5ff;
+}
+
+.question::after {
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f105";
+  float: right;
+  margin-left: 5px;
+}
+
+.expanded {
+  box-shadow: 0px 5px 10px #e0e0e0;
+}
+
+.expanded::after {
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f107"; /* Unicode character for "minus" sign (-) */
 }
 
 .answer {
+  position: relative;
+  top: -10px;
   max-width: 510px;
-  /* height: 20px; */
   line-height: 70px;
-  padding: 7px 20px;
+  padding: 40px 20px;
   overflow: hidden;
   background: #f5f5ff;
   box-shadow: 0px 25px 59px rgba(191, 191, 236, 0.72);
   border-radius: 10px;
   z-index: 0;
-  max-height: 0px;
-  transition: max-height 0.2s ease-out;
+  height: auto;
+  transition: display 0.5s ease-in-out;
 }

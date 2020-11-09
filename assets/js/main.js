@@ -1,16 +1,40 @@
-//Landing Nav Mobile Toogle
+const navBarToggle = document.querySelector(".landing__nav__toogle"); //Landing Nav Mobile Toogle
+const question = document.querySelectorAll(".question"); //Question Buttons in Accordion Menu FAQ
+const loadMoreBtn = document.querySelector(".questions__button"); //Load more Questions
 
-let mainNav = document.getElementById("navbar");
-let navBarToggle = document.getElementById("js-navbar-toggle");
-let icon = document.getElementById("landing__nav__toogle__icon");
-let blob = document.getElementsByClassName("blob");
+const answerslist = [
+  "Traffic permits are a requirement for conducting professional traffic.",
+  "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+];
 
-navBarToggle.addEventListener("click", function () {
-  icon.classList.toggle("fa-times");
-  mainNav.classList.toggle("active");
-});
+navBarToggle.addEventListener("click", mobileNavShowClose);
+loadMoreBtn.addEventListener("click", loadMore);
+
+function mobileNavShowClose() {
+  let nav = document.querySelector(".landing__nav__links");
+  let navIcon = document.querySelector("#landing__nav__toogle__icon");
+  navIcon.classList.toggle("fa-bars", false);
+  navIcon.classList.toggle("fa-times", true);
+  nav.classList.toggle("landing__nav--mobile");
+}
+
+//Accordion menu cicle function
+for (i = 0; i < question.length; i++) {
+  question[i].addEventListener("click", function () {
+    var answer = this.nextElementSibling;
+    this.classList.toggle("expanded");
+    if (answer.classList.contains("no-disp")) {
+      answer.classList.remove("no-disp");
+    } else {
+      answer.classList.add("no-disp");
+    }
+  });
+}
+
+function loadMore() {}
 
 //Video section controls styling
+/*
 var video = document.getElementById("video");
 
 function togglePlayPause() {
@@ -27,7 +51,7 @@ function togglePlayPause() {
     video.pause();
   }
 }
-/*
+
 function updateProgress() {
   var progress = document.getElementById("progress");
   var value = 0;
@@ -36,24 +60,3 @@ function updateProgress() {
   }
   progress.style.width = value + "%";
 }*/
-
-// Accordion FAQ
-var acc = document.getElementsByClassName("question");
-
-// for (let i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function () {
-//     var panel = this.nextElementSibling;
-//     panel.classList.toggle("no-disp");
-//   });
-// }
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}

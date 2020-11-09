@@ -50,7 +50,7 @@
   }
 
   /* Added Class for JS Toogle Menu */
-  .active {
+  .landing__nav--mobile {
     width: auto;
     height: auto;
     display: block;
@@ -122,5 +122,8 @@
 
   #progressBar {
     width: 200px;
+  }
+  #progress {
+    left: -40px;
   }
 }
