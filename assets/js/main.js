@@ -1,22 +1,51 @@
+//Define variables & const
 const navBarToggle = document.querySelector(".landing__nav__toogle"); //Landing Nav Mobile Toogle
 const question = document.querySelectorAll(".question"); //Question Buttons in Accordion Menu FAQ
 const loadMoreBtn = document.querySelector(".questions__button"); //Load more Questions
 
+//Events Listeners
 navBarToggle.addEventListener("click", mobileNavShowClose);
+loadMoreBtn.addEventListener("click", loadMore);
 
 for (i = 0; i < question.length; i++) {
   question[i].addEventListener("click", accordionMenu);
 }
-loadMoreBtn.addEventListener("click", loadMore);
-//question.forEach(accordionMenu(quest));
+
+window.onscroll = function () {
+  Scrolling();
+};
+
+/*************
+ * Functions *
+ *************/
+
+//Change navBar colors on scrolling
+function Scrolling() {
+  let navBar = document.querySelector(".landing__nav");
+  let logoEllipse = document.querySelector(".ellipse");
+  let logo = document.querySelector(".logo--icon");
+  let top = window.scrollY;
+  if (top >= 100) {
+    navBar.classList.add("scrolled");
+    navBarToggle.style.color = "#5e5e8b";
+    logo.style.color = "#5e5e8b";
+    logoEllipse.style.background = "none";
+  } else {
+    navBar.classList.remove("scrolled");
+    navBarToggle.style.color = "#FFFFFF";
+    logo.style.color = "#FFF";
+    logoEllipse.style.background = "#c8c8c8";
+  }
+}
 
 //Mobile navigation menu function
 function mobileNavShowClose() {
-  let nav = document.querySelector(".landing__nav__links");
+  let navListType = document.querySelector(".landing__nav__links");
   let navIcon = document.querySelector("#landing__nav__toogle__icon");
-  navIcon.classList.toggle("fa-bars", false);
-  navIcon.classList.toggle("fa-times", true);
-  nav.classList.toggle("landing__nav--mobile");
+  navListType.classList.toggle("landing__nav--mobile");
+  if (navIcon.classList.contains("fa-bars"))
+    navIcon.classList.replace("fa-bars", "fa-times");
+  else navIcon.classList.replace("fa-times", "fa-bars");
 }
 
 //Accordion menu for questions function
@@ -65,31 +94,3 @@ function loadMore() {
   questions.appendChild(newBox);
   newQuest.addEventListener("click", accordionMenu);
 }
-
-//Video section controls styling
-/*
-var video = document.getElementById("video");
-
-function togglePlayPause() {
-  var playpause = document.getElementById("playpause");
-  var play = "<i class='fas fa-play fa-3x'></i>";
-  var pause = "<i class='fas fa-pause fa-3x'></i>";
-  if (video.paused || video.ended) {
-    playpause.title = "pause";
-    playpause.style.display = "none";
-    video.play();
-  } else {
-    playpause.title = "play";
-    playpause.innerHTML = play;
-    video.pause();
-  }
-}
-
-function updateProgress() {
-  var progress = document.getElementById("progress");
-  var value = 0;
-  if (video.currentTime > 0) {
-    value = Math.floor((100 / video.duration) * video.currentTime);
-  }
-  progress.style.width = value + "%";
-}*/

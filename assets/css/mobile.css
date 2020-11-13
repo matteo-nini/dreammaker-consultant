@@ -10,31 +10,33 @@
 
   .landing {
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 
   .landing__nav {
     height: auto;
-    padding: 10px 30px;
+    padding: 30px 0px;
     justify-content: space-between;
+  }
+
+  .logo {
+    position: fixed;
+    left: 50px;
   }
 
   .ellipse {
     width: 0;
     height: 0;
-    background: none;
+    background-color: transparent;
     line-height: normal;
-    margin-right: 0;
   }
 
-  .landing__nav .logo--extended {
+  .logo--extended {
     display: none;
   }
 
   .landing__nav__links {
-    list-style-type: none;
     display: none;
-    justify-content: center;
   }
 
   .landing__nav__links li {
@@ -44,18 +46,16 @@
 
   .landing__nav__toogle {
     display: block;
+    position: fixed;
+    right: 50px;
     cursor: pointer;
-    color: #5e5e8b;
     font-size: 18px;
-    position: absolute;
-    right: 30px;
-    align-items: center;
-    justify-content: flex-end;
+    color: #fff;
   }
 
   /* Added Class for JS Toogle Menu */
   .landing__nav--mobile {
-    width: auto;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -68,7 +68,7 @@
   }
 
   .landing__content {
-    margin: 30px auto;
+    margin: 70px auto;
     align-items: center;
   }
 
@@ -175,7 +175,7 @@
   }
 
   .questions__button {
-    width: 320px;
+    width: 330px;
     height: 70px;
     transform: translate(0px, 100px);
     z-index: 12;
@@ -188,6 +188,6 @@
 
   .question,
   .answer {
-    max-width: 320px;
+    max-width: 330px;
   }
 }

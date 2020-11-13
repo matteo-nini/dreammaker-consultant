@@ -1,5 +1,13 @@
 @import "fonts.css";
 
+/* Set the anchor link position for the right landing */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -116px;
+  visibility: hidden;
+}
+
 /*
 =====================================================
                     Landing Page
@@ -14,6 +22,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
+  z-index: 1;
 }
 
 /* Navbar */
@@ -23,11 +32,17 @@
   height: 116px;
   padding: 0 30px;
   background: rgba(196, 196, 196, 0.1);
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  left: 0; */
+  left: 0;
+  z-index: 10;
   justify-content: space-evenly;
   align-items: center;
+  transition: background-color 0.4s ease-out;
+}
+
+.scrolled {
+  background-color: #fff;
 }
 
 .ellipse {
