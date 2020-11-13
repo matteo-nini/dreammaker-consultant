@@ -172,15 +172,6 @@ button:active {
 }
 
 /* Question Box */
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::after {
-  content: "\02795"; /* Unicode character for "plus" sign (+) */
-  float: right;
-  margin-left: 5px;
-}
 
 .question__box {
   display: flex;
@@ -192,6 +183,7 @@ summary::after {
 .question {
   color: #402b2b;
   text-align: left;
+
   width: 550px;
   padding: 30px 20px;
   background: #ffffff;
@@ -229,5 +221,4 @@ summary::after {
   border-radius: 10px;
   z-index: 0;
   height: auto;
-  transition: display 0.5s ease-in-out;
 }

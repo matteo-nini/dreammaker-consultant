@@ -208,24 +208,24 @@ video {
 .questions {
   width: 100vw;
   height: auto;
-  margin: 100px auto;
+  margin: 50px auto;
   overflow: hidden;
+}
+
+.questions__title {
+  margin: 200px auto 0px 165px;
 }
 
 .blob {
   width: 150%;
   float: right;
-  position: relative;
-  top: -200px;
-  right: -70px;
+  transform: translate(0px, -450px);
   z-index: -1;
   animation-delay: 0.5s;
 }
 
 .blob img {
-  position: relative;
-  top: -650px;
-  right: 0px;
+  transform: translate(50px, -800px);
   display: block;
   width: 530px;
   height: 730px;
@@ -234,11 +234,11 @@ video {
 
 .questions .containerCenter {
   position: relative;
-  top: 200px;
+  top: 100px;
 }
 
 .questions__list {
-  transform: translate(0px, -970px);
+  transform: translate(0px, -1370px);
 }
 
 .questions__button {
@@ -246,6 +246,6 @@ video {
   height: 90px;
   display: block;
   margin: 0 auto;
-  position: relative;
-  top: -700px;
+  transform: translate(0px, -1200px);
+  order: 3;
 }

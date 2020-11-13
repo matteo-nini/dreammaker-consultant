@@ -2,14 +2,15 @@ const navBarToggle = document.querySelector(".landing__nav__toogle"); //Landing 
 const question = document.querySelectorAll(".question"); //Question Buttons in Accordion Menu FAQ
 const loadMoreBtn = document.querySelector(".questions__button"); //Load more Questions
 
-const answerslist = [
-  "Traffic permits are a requirement for conducting professional traffic.",
-  "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-];
-
 navBarToggle.addEventListener("click", mobileNavShowClose);
-loadMoreBtn.addEventListener("click", loadMore);
 
+for (i = 0; i < question.length; i++) {
+  question[i].addEventListener("click", accordionMenu);
+}
+loadMoreBtn.addEventListener("click", loadMore);
+//question.forEach(accordionMenu(quest));
+
+//Mobile navigation menu function
 function mobileNavShowClose() {
   let nav = document.querySelector(".landing__nav__links");
   let navIcon = document.querySelector("#landing__nav__toogle__icon");
@@ -18,20 +19,52 @@ function mobileNavShowClose() {
   nav.classList.toggle("landing__nav--mobile");
 }
 
-//Accordion menu cicle function
-for (i = 0; i < question.length; i++) {
-  question[i].addEventListener("click", function () {
-    var answer = this.nextElementSibling;
-    this.classList.toggle("expanded");
-    if (answer.classList.contains("no-disp")) {
-      answer.classList.remove("no-disp");
-    } else {
-      answer.classList.add("no-disp");
-    }
-  });
+//Accordion menu for questions function
+function accordionMenu(question) {
+  let answer = question.currentTarget.nextElementSibling;
+  question.currentTarget.classList.toggle("expanded");
+  if (answer.classList.contains("no-disp")) {
+    answer.classList.remove("no-disp");
+  } else answer.classList.add("no-disp");
 }
 
-function loadMore() {}
+//Load more questions button function
+function loadMore() {
+  const qList = [
+    "How much does a commercial traffic permit cost for goods?",
+    "Where to look for a traffic permit?",
+    "How is the sample for a professional traffic permit booked?",
+    "Are there differences between a traffic permit and a professional traffic permit?",
+  ];
+
+  const aList = [
+    "Traffic permits are a requirement for conducting professional traffic.",
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    "Commercial traffic permits cost from 50$ to 70$, depends of using cases",
+    "With a professional traffic permit you can afford to take all goods you want!",
+  ];
+
+  let randomQuest = Math.floor(Math.random() * qList.length);
+  let randomAns = Math.floor(Math.random() * aList.length);
+
+  const questions = document.querySelector(".questions__list");
+
+  let newBox = document.createElement("div");
+  newBox.className = "question__box";
+
+  let newQuest = document.createElement("button");
+  newQuest.className = "question";
+  newQuest.innerHTML = `${qList[randomQuest]}`;
+
+  let newAnswer = document.createElement("div");
+  newAnswer.classList.add("answer", "no-disp");
+  newAnswer.innerHTML = `${aList[randomAns]}`;
+
+  newBox.appendChild(newQuest);
+  newBox.appendChild(newAnswer);
+  questions.appendChild(newBox);
+  newQuest.addEventListener("click", accordionMenu);
+}
 
 //Video section controls styling
 /*

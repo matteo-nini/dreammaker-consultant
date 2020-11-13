@@ -1,4 +1,8 @@
 @media (max-width: 767.98px) {
+  body,
+  section {
+    text-align: center;
+  }
   /*
 =====================================================
                 Landing & Services section
@@ -80,7 +84,6 @@
 
   .people {
     flex-direction: column;
-    text-align: center;
   }
 
   .people__network {
@@ -92,11 +95,6 @@
 =====================================================
                     Video section
 ===================================================== */
-
-  .video {
-    text-align: center;
-  }
-
   .video__poster,
   video {
     height: 430px;
@@ -125,5 +123,71 @@
   }
   #progress {
     left: -40px;
+  }
+
+  .question {
+    max-width: 70%;
+  }
+  .answer {
+    max-width: 65%;
+  }
+
+  /* Questions section */
+
+  .questions {
+    width: 100%;
+  }
+
+  .questions .containerCenter {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .questions__title {
+    margin: 0;
+  }
+
+  .blob {
+    margin: 0 auto;
+    width: 120%;
+    transform: translate(-55px, -750px);
+    z-index: -1;
+    animation-delay: 0.5s;
+  }
+
+  .blob img {
+    transform: translate(150px, -540px);
+    display: block;
+    width: 250px;
+    height: 344px;
+    z-index: 0;
+  }
+
+  .questions__columns__right {
+    margin-top: 650px;
+    order: 0;
+  }
+
+  .questions__columns__left {
+    margin-top: -1375px;
+    order: 1;
+  }
+
+  .questions__button {
+    width: 420px;
+    height: 70px;
+    order: 2;
+    transform: translate(0px, 120px);
+  }
+
+  .question__box,
+  .questions__list .question__box {
+    margin: 15px auto;
+  }
+
+  .question,
+  .answer {
+    max-width: 430px;
   }
 }
