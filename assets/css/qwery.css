@@ -151,13 +151,13 @@
   .blob {
     margin: 0 auto;
     width: 120%;
-    transform: translate(-55px, -750px);
+    transform: translate(-40px, -870px);
     z-index: -1;
     animation-delay: 0.5s;
   }
 
   .blob img {
-    transform: translate(150px, -540px);
+    transform: translate(120px, -420px);
     display: block;
     width: 250px;
     height: 344px;
@@ -165,7 +165,7 @@
   }
 
   .questions__columns__right {
-    margin-top: 650px;
+    margin-top: 790px;
     order: 0;
   }
 
@@ -175,10 +175,10 @@
   }
 
   .questions__button {
-    width: 420px;
+    width: 320px;
     height: 70px;
-    order: 2;
-    transform: translate(0px, 120px);
+    transform: translate(0px, 100px);
+    z-index: 12;
   }
 
   .question__box,
@@ -188,6 +188,6 @@
 
   .question,
   .answer {
-    max-width: 430px;
+    max-width: 320px;
   }
 }
