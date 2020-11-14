@@ -185,16 +185,18 @@
   }
 
   /* Featurs section */
+
   .features .containerCenter {
     flex-direction: column;
   }
 
   .features__box {
     width: 100%;
-    margin: 20px auto;
+    margin: 0px auto 100px;
   }
 
   /* Reviews section */
+
   .reviews__background {
     width: 100%;
     margin-top: -450px;
@@ -209,6 +211,8 @@
     align-items: center;
     top: 0px;
   }
+
+  /* Slider */
 
   .slide {
     width: 100%;
@@ -228,6 +232,7 @@
     width: 58px;
     height: 58px;
     margin: 0px;
+    margin-top: 30px;
   }
 
   .slide__user__info {
@@ -235,22 +240,20 @@
   }
 
   .slide .slide__content {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     order: 2;
   }
 
   .slide__content img {
-    width: 30px;
-    height: 30px;
     background: #fff;
     border: 1px solid #9b9bca;
-    transform: translate(20px, -50px);
+    transform: translateY(10%);
   }
 
   .slide__content p {
     width: 100%;
     text-align: center;
-    transform: translateX(20px);
   }
 }
