@@ -193,4 +193,64 @@
     width: 100%;
     margin: 20px auto;
   }
+
+  /* Reviews section */
+  .reviews__background {
+    width: 100%;
+    margin-top: -450px;
+  }
+
+  .reviews__woman {
+    width: 100%;
+    margin: -250px 0px 0;
+  }
+
+  .reviews .containerCenter {
+    align-items: center;
+    top: 0px;
+  }
+
+  .slide {
+    width: 100%;
+    padding: 0px;
+    margin-top: 50px;
+    border: 1px solid #d2d2d2;
+  }
+
+  .slide .slide__user {
+    order: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide__user img {
+    width: 58px;
+    height: 58px;
+    margin: 0px;
+  }
+
+  .slide__user__info {
+    text-align: center;
+  }
+
+  .slide .slide__content {
+    justify-content: center;
+    align-items: center;
+    order: 2;
+  }
+
+  .slide__content img {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #9b9bca;
+    transform: translate(20px, -50px);
+  }
+
+  .slide__content p {
+    width: 100%;
+    text-align: center;
+    transform: translateX(20px);
+  }
 }

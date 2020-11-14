@@ -263,7 +263,7 @@ button:active {
   border: 1px solid #d2d2d2;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  margin: 20px;
+  margin: 20px 45px;
   display: flex;
   padding: 30px 0 0;
   flex-direction: column;
@@ -293,4 +293,80 @@ button:active {
 
 .features__box button:hover {
   background-color: #fff !important;
+}
+
+/* Slider reviews */
+.slide {
+  justify-content: center;
+  width: 488px;
+  height: 375px;
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.slide__content {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.slide__content p {
+  width: 80%;
+  text-align: left;
+  color: #9d9d9d;
+}
+
+.slide__content img {
+  width: 56px;
+  height: 56px;
+  background: #eeeeee;
+  border-radius: 50%;
+}
+
+.slide__user {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slide__user img {
+  width: 98px;
+  height: 98px;
+  background: #ffffff;
+  box-shadow: 2px 8px 15px rgba(147, 147, 147, 0.25);
+  border-radius: 50%;
+  margin: 0 50px 0 15px;
+}
+
+.slide__user__info {
+  text-align: left;
+}
+
+.slide__user__info h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #626780;
+}
+
+.slide__user__info p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #9d9d9d;
+}
+.slide__user__info span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 30px;
+  color: #9d9d9d;
+}
+.slide__user__info i {
+  color: #ffce31;
+  font-size: 14px;
 }

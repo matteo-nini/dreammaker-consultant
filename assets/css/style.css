@@ -285,10 +285,35 @@ video {
 ===================================================== */
 
 .features {
-  margin: 167px 0;
+  margin: 167px 0 0;
   text-align: center;
 }
 
 .features .containerCenter {
   margin: 160px auto;
+}
+
+/*
+=====================================================
+                    Review section
+===================================================== */
+.reviews {
+  height: 2000px;
+}
+.reviews__background {
+  position: relative;
+  margin-top: -700px;
+  z-index: -1;
+}
+
+.reviews__woman {
+  margin-top: -700px;
+  z-index: 1;
+}
+
+.reviews .containerCenter {
+  text-align: center;
+  position: relative;
+  top: -650px;
+  align-items: flex-end;
 }
