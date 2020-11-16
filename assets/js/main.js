@@ -139,6 +139,7 @@ function changeSlide() {
   userRating.innerHTML = `${ratings[n]}`;
 }
 
+//Form validation function
 function formValidate(event) {
   let name = document.querySelector("#name");
   let password = document.querySelector("#password");

@@ -132,7 +132,10 @@
     max-width: 65%;
   }
 
-  /* Questions section */
+  /*
+=====================================================
+                    Question section
+===================================================== */
 
   .questions {
     width: 100%;
@@ -184,7 +187,10 @@
     max-width: 320px;
   }
 
-  /* Featurs section */
+  /*
+=====================================================
+                    Features section
+===================================================== */
 
   .features .containerCenter {
     flex-direction: column;
@@ -195,7 +201,10 @@
     margin: 0px auto 100px;
   }
 
-  /* Reviews section */
+  /*
+=====================================================
+                    Reviews section
+===================================================== */
 
   .reviews__background {
     width: 100%;
@@ -261,7 +270,10 @@
     text-align: center;
   }
 
-  /* Login section */
+  /*
+=====================================================
+                    Login section
+===================================================== */
   .login {
     margin-top: 100px;
   }
@@ -295,7 +307,10 @@
     font-size: 16px;
   }
 
-  /* Footer section */
+  /*
+=====================================================
+                    Footer section
+===================================================== */
   .footer {
     height: auto;
   }
@@ -309,12 +324,6 @@
   }
 
   .sub__footer {
-    /* flex-direction: column;
-    height: auto;
-    margin-top: 20px;
-    justify-content: space-evenly;
-    transform: translateY(0);
-    padding: 0; */
     align-items: center;
     transform: translateY(0);
     padding: 0 20px;
