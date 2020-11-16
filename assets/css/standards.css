@@ -296,14 +296,16 @@ button:active {
 }
 
 /* Slider reviews */
+
 .slide {
-  justify-content: center;
+  justify-content: space-around;
   width: 488px;
   height: 375px;
   background: #ffffff;
   box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
   border-radius: 10px;
   padding: 20px;
+  border: 1px solid #d2d2d2;
 }
 
 .slide__content {
@@ -347,7 +349,6 @@ button:active {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 30px;
   color: #626780;
 }
 
@@ -355,18 +356,32 @@ button:active {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
   color: #9d9d9d;
 }
+
 .slide__user__info span {
   font-family: "Poppins";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 30px;
   color: #9d9d9d;
 }
+
 .slide__user__info i {
   color: #ffce31;
   font-size: 14px;
+}
+
+.active {
+  animation: slideShow 1s ease-in-out;
+}
+@keyframes slideShow {
+  0% {
+    opacity: 0;
+    transform: translate(-70%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0px);
+  }
 }

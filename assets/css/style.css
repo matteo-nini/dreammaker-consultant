@@ -297,6 +297,7 @@ video {
 =====================================================
                     Review section
 ===================================================== */
+
 .reviews {
   height: 2000px;
 }
@@ -306,7 +307,7 @@ video {
   z-index: -1;
 }
 
-.reviews__woman {
+.reviews__bg__user {
   margin-top: -700px;
   z-index: 1;
 }
@@ -316,4 +317,8 @@ video {
   position: relative;
   top: -650px;
   align-items: flex-end;
+}
+
+.reviews__slider {
+  margin-top: 60px;
 }

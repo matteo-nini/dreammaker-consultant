@@ -202,7 +202,7 @@
     margin-top: -450px;
   }
 
-  .reviews__woman {
+  .reviews__bg__user {
     width: 100%;
     margin: -250px 0px 0;
   }
@@ -214,11 +214,14 @@
 
   /* Slider */
 
+  .reviews__slider {
+    margin-top: 0px;
+  }
+
   .slide {
     width: 100%;
     padding: 0px;
     margin-top: 50px;
-    border: 1px solid #d2d2d2;
   }
 
   .slide .slide__user {
@@ -232,11 +235,12 @@
     width: 58px;
     height: 58px;
     margin: 0px;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .slide__user__info {
     text-align: center;
+    line-height: normal;
   }
 
   .slide .slide__content {

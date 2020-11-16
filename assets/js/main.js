@@ -1,19 +1,50 @@
+window.onscroll = function () {
+  Scrolling();
+};
+
 //Define variables & const
 const navBarToggle = document.querySelector(".landing__nav__toogle"); //Landing Nav Mobile Toogle
 const question = document.querySelectorAll(".question"); //Question Buttons in Accordion Menu FAQ
 const loadMoreBtn = document.querySelector(".questions__button"); //Load more Questions
+const userName = document.querySelector(".slide__user__info__name"); //Name of reviewer
+const userReview = document.querySelector(".slide__content p"); //User review
+const userRating = document.querySelector(".slide__user__info__rating"); //user rating
+const nextSlide = document.querySelector(".slide__next"); //Next button slider
+
+const names = ["Simon Sandberg", "John Smith", "Sarah Miller"]; //Array of names for viewres
+const avatars = [
+  "assets/images/webp/reviews_section/review_woman.webp",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSz1xGnb3ehO7hFlcx6InC4Km8V5pPo52e5HA&usqp=CAU",
+  "https://deascuola-nephila-bucket-prod.s3.amazonaws.com/filer_public_thumbnails/filer_public/33/7e/337ef584-09cf-48c4-9ab5-509c28c451b6/esamestato2020_prof_donna.png__950x0_q85_crop_subsampling-2.png",
+];
+const reviews = [
+  "From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS) who can generate and certify the traffic control plan.",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur aliquam eos cumque amet, neque ducimus velit quo explicabo? Temporibus vero enim aspernatur ipsa sint fuga! Sapiente inventore iure hic!",
+  "From most barricade or traffic control companies located in the phone book. Some other text here.",
+];
+
+const ratings = [
+  "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i> 3 star",
+  "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i> 5 star",
+  "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i> 4 star",
+];
+
+var n = 0; //index
+//document.review__bg__user.src = avatars[n]; //img of user in background
+document.slide__user__avatar.src = avatars[n]; //img of user in slide
+userName.innerHTML = `${names[n]}`;
+userReview.innerHTML = `${reviews[n]}`;
+userRating.innerHTML = `${ratings[1]}`;
 
 //Events Listeners
+
 navBarToggle.addEventListener("click", mobileNavShowClose);
 loadMoreBtn.addEventListener("click", loadMore);
+nextSlide.addEventListener("click", changeSlide);
 
 for (i = 0; i < question.length; i++) {
   question[i].addEventListener("click", accordionMenu);
 }
-
-window.onscroll = function () {
-  Scrolling();
-};
 
 /*************
  * Functions *
@@ -93,4 +124,17 @@ function loadMore() {
   newBox.appendChild(newAnswer);
   questions.appendChild(newBox);
   newQuest.addEventListener("click", accordionMenu);
+}
+
+//change slide function
+function changeSlide() {
+  let slide = document.querySelector(".slide");
+  slide.classList.add("active");
+  n++;
+  slide.classList.add("active");
+  if (n > names.length - 1) n = 0;
+  document.slide__user__avatar.src = avatars[n];
+  userName.innerHTML = `${names[n]}`;
+  userReview.innerHTML = `${reviews[n]}`;
+  userRating.innerHTML = `${ratings[n]}`;
 }
