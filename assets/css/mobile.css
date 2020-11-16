@@ -260,4 +260,38 @@
     width: 100%;
     text-align: center;
   }
+
+  /* Login section */
+  .login {
+    margin-top: 100px;
+  }
+
+  .login__form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .login__form fieldset {
+    margin: 60px 0;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .login__form label:first-child {
+    margin-top: inherit;
+  }
+
+  .login__form input {
+    width: 100%;
+  }
+
+  .login__form input::placeholder,
+  .login__form input:focus,
+  .login__form input:active {
+    font-size: 14px;
+  }
+
+  .login__form p {
+    font-size: 16px;
+  }
 }

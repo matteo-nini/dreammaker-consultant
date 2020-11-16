@@ -138,3 +138,34 @@ function changeSlide() {
   userReview.innerHTML = `${reviews[n]}`;
   userRating.innerHTML = `${ratings[n]}`;
 }
+
+function formValidate(event) {
+  let name = document.querySelector("#name");
+  let password = document.querySelector("#password");
+  let Error = document.querySelectorAll(".login__form__validate");
+  var ck_password = /^[A-Za-z0-9]{8,12}$/;
+
+  if (name.value == "" || name.value == null) {
+    name.focus();
+    name.style.border = "2px solid #f01f35";
+    name.style.color = "#f01f35";
+    Error[0].style.color = "#f01f35";
+    Error[0].innerHTML = "Please, enter a valid name";
+    event.preventDefault();
+  } else if (password.value == "" || !ck_password.test(password.value)) {
+    password.focus();
+    password.style.border = "2px solid #f01f35";
+    password.style.color = "#f01f35";
+    Error[1].style.color = "#f01f35";
+    Error[1].innerHTML = "Your password must be between 8 and 12 characters";
+    event.preventDefault();
+  } else {
+    name.style.border = "1px solid #00B1BD";
+    name.style.color = "#00B1BD";
+    Error[0].style.color = "#00B1BD";
+    password.style.border = "1px solid #00B1BD";
+    password.style.color = "#00B1BD";
+    Error[1].style.color = "#00B1BD";
+    return true;
+  }
+}

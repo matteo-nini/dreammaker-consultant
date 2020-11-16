@@ -299,7 +299,7 @@ video {
 ===================================================== */
 
 .reviews {
-  height: 2000px;
+  height: auto;
 }
 .reviews__background {
   position: relative;
@@ -321,4 +321,104 @@ video {
 
 .reviews__slider {
   margin-top: 60px;
+}
+
+/*
+=====================================================
+                    Login section
+===================================================== */
+.login {
+  margin-top: -400px;
+}
+
+.login__form {
+  width: 708px;
+  height: 566px;
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(149, 149, 201, 0.4);
+  border-radius: 10px;
+  margin: 50px auto 20px;
+  border: 0;
+}
+
+.login__form fieldset,
+label {
+  border: 0;
+}
+
+.login__form fieldset {
+  margin: 0 135px 0 173px;
+  justify-content: center;
+}
+
+.login__form label {
+  width: 95px;
+  height: 38px;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #626780;
+}
+
+.login__form label:first-child {
+  margin-top: 70px;
+}
+
+.login__form input {
+  width: 400px;
+  height: 60px;
+  padding: 11px 200px 11px 40px;
+  border: 1px solid #9595c9;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: all 0.5s linear;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.login__form input::placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #9d9d9d;
+}
+
+.login__form input:focus,
+.login__form input:active {
+  border: 2px solid #9595c9;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 40px rgba(149, 149, 201, 0.2);
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #626780;
+}
+
+.login__form button {
+  width: 220px;
+  height: 60px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.login__form p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.login__form p span {
+  color: #f01f35;
+}
+
+span.login__form__validate {
+  transform: translateY(-30px);
+  font-size: 12px !important;
 }

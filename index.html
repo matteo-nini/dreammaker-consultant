@@ -288,10 +288,28 @@
     <!-- login section -->
     <a name="Contact" class="anchor"></a>
     <section class="login">
+        <div class="containerCenter">
+            <h1>Please join with us & get <br>
+                all kind of benifit</h1>
+                <form class="login__form" onsubmit="formValidate()" method="POST">
+                    <fieldset class="flex flex-col">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Your Name"/>
+                        <span class="login__form__validate">Required</span>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Your Password"/>
+                        <span class="login__form__validate">Required</span>
+                        <button type="submit" class="purple">Sign In</button>
+                        <p>Don’t have an account ? <a href="#"><span>Sign up here</span></a></p>
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- footer section -->
-    <footer class="services"></section>
+    <footer class="footer"></section>
 
     <script src="assets/js/main.js"></script>
 
