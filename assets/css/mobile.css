@@ -294,4 +294,38 @@
   .login__form p {
     font-size: 16px;
   }
+
+  /* Footer section */
+  .footer {
+    height: auto;
+  }
+
+  .top__footer {
+    flex-direction: column;
+    transform: translateY(0);
+  }
+  .top__footer ul {
+    margin-top: 30px;
+  }
+
+  .sub__footer {
+    /* flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    transform: translateY(0);
+    padding: 0; */
+    align-items: center;
+    transform: translateY(0);
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+
+  .sub__footer__right img {
+    margin: 30px 0px;
+  }
+  .sub__footer__right a.logo {
+    align-self: flex-end;
+    margin-top: 70px;
+  }
 }
