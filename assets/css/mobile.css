@@ -1,340 +1,338 @@
-@media (max-width: 767.98px) {
-  body,
-  section {
-    text-align: center;
-  }
-  /*
+body,
+section {
+  text-align: center;
+}
+/*
 =====================================================
                 Landing & Services section
 ===================================================== */
 
-  .landing {
-    height: auto;
-    padding-bottom: 0px;
-  }
+.landing {
+  height: auto;
+  padding-bottom: 0px;
+}
 
-  .landing__nav {
-    height: auto;
-    padding: 30px 0px;
-    justify-content: space-between;
-  }
+.landing__nav {
+  height: auto;
+  padding: 30px 0px;
+  justify-content: space-between;
+}
 
-  .logo {
-    position: fixed;
-    left: 50px;
-  }
+.logo {
+  position: fixed;
+  left: 50px;
+}
 
-  .ellipse {
-    width: 0;
-    height: 0;
-    background-color: transparent;
-    line-height: normal;
-  }
+.ellipse {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  line-height: normal;
+}
 
-  .logo--extended {
-    display: none;
-  }
+.logo--extended {
+  display: none;
+}
 
-  .landing__nav__links {
-    display: none;
-  }
+.landing__nav__links {
+  display: none;
+}
 
-  .landing__nav__links li {
-    margin: 10px auto;
-    text-align: center;
-  }
+.landing__nav__links li {
+  margin: 10px auto;
+  text-align: center;
+}
 
-  .landing__nav__toogle {
-    display: block;
-    position: fixed;
-    right: 50px;
-    cursor: pointer;
-    font-size: 18px;
-    color: #fff;
-  }
+.landing__nav__toogle {
+  display: block;
+  position: fixed;
+  right: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
 
-  /* Added Class for JS Toogle Menu */
-  .landing__nav--mobile {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+/* Added Class for JS Toogle Menu */
+.landing__nav--mobile {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
-  .landing__content,
-  .services__content {
-    width: 70%;
-    text-align: center;
-  }
+.landing__content,
+.services__content {
+  width: 70%;
+  text-align: center;
+}
 
-  .landing__content {
-    margin: 70px auto;
-    align-items: center;
-  }
+.landing__content {
+  margin: 70px auto;
+  align-items: center;
+}
 
-  .services .container {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+.services .container {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
-  /*
+/*
 =====================================================
                     People section
 ===================================================== */
 
-  .people {
-    flex-direction: column;
-  }
+.people {
+  flex-direction: column;
+}
 
-  .people__network {
-    width: 100%;
-    background-size: contain;
-  }
+.people__network {
+  width: 100%;
+  background-size: contain;
+}
 
-  /*
+/*
 =====================================================
                     Video section
 ===================================================== */
-  .video__poster,
-  video {
-    height: 430px;
-  }
-  #playpause {
-    width: 90px;
-    height: 90px;
-  }
+.video__poster,
+video {
+  height: 430px;
+}
+#playpause {
+  width: 90px;
+  height: 90px;
+}
 
-  #playpause i {
-    line-height: 90px;
-  }
+#playpause i {
+  line-height: 90px;
+}
 
-  #controls {
-    width: 100vw;
-    height: 70px;
-  }
+#controls {
+  width: 100vw;
+  height: 70px;
+}
 
-  #controls img {
-    width: 20px;
-    height: 20px;
-  }
+#controls img {
+  width: 20px;
+  height: 20px;
+}
 
-  #progressBar {
-    width: 200px;
-  }
-  #progress {
-    left: -40px;
-  }
+#progressBar {
+  width: 200px;
+}
+#progress {
+  left: -40px;
+}
 
-  .question {
-    max-width: 70%;
-  }
-  .answer {
-    max-width: 65%;
-  }
+.question {
+  max-width: 70%;
+}
+.answer {
+  max-width: 65%;
+}
 
-  /*
+/*
 =====================================================
                     Question section
 ===================================================== */
 
-  .questions {
-    width: 100%;
-  }
+.questions {
+  width: 100%;
+}
 
-  .questions .container {
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.questions .container {
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .questions__title {
-    margin: 30px auto;
-  }
+.questions__title {
+  margin: 30px auto;
+}
 
-  .man {
-    margin: 0 auto;
-  }
+.man {
+  margin: 0 auto;
+}
 
-  .man svg {
-    top: 250px;
-    right: 50px;
-  }
+.man svg {
+  top: 250px;
+  right: 50px;
+}
 
-  .man img {
-    width: 250px;
-    height: 344px;
-    top: 250px;
-    margin: 0 auto;
-  }
-  .questions__columns__left {
-    margin-top: 250px;
-  }
-  .questions__columns__right {
-    margin-top: auto;
-  }
+.man img {
+  width: 250px;
+  height: 344px;
+  top: 250px;
+  margin: 0 auto;
+}
+.questions__columns__left {
+  margin-top: 250px;
+}
+.questions__columns__right {
+  margin-top: auto;
+}
 
-  .questions__button {
-    width: 320px;
-    height: 70px;
-  }
+.questions__button {
+  width: 320px;
+  height: 70px;
+}
 
-  .question__box {
-    margin: 15px auto;
-  }
+.question__box {
+  margin: 15px auto;
+}
 
-  .question,
-  .answer {
-    max-width: 320px;
-  }
+.question,
+.answer {
+  max-width: 320px;
+}
 
-  /*
+/*
 =====================================================
                     Features section
 ===================================================== */
 
-  .features .container {
-    flex-direction: column;
-  }
+.features .container {
+  flex-direction: column;
+}
 
-  .features__box {
-    width: 100%;
-    margin: 0px auto 100px;
-  }
+.features__box {
+  width: 100%;
+  margin: 0px auto 100px;
+}
 
-  /*
+/*
 =====================================================
                     Reviews section
 ===================================================== */
 
-  .reviews__background {
-    width: 100%;
-    margin-top: -450px;
-  }
+.reviews__background {
+  width: 100%;
+  margin-top: -450px;
+}
 
-  .reviews__bg__user {
-    width: 100%;
-    margin: -250px 0px 0;
-  }
+.reviews__bg__user {
+  width: 100%;
+  margin: -250px 0px 0;
+}
 
-  .reviews .container {
-    align-items: center;
-    top: 0px;
-  }
+.reviews .container {
+  align-items: center;
+  top: 0px;
+}
 
-  /* Slider */
+/* Slider */
 
-  .reviews__slider {
-    margin-top: 0px;
-  }
+.reviews__slider {
+  margin-top: 0px;
+}
 
-  .slide {
-    width: 100%;
-    padding: 0px;
-    margin-top: 50px;
-  }
+.slide {
+  width: 100%;
+  padding: 0px;
+  margin-top: 50px;
+}
 
-  .slide .slide__user {
-    order: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.slide .slide__user {
+  order: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .slide__user img {
-    width: 58px;
-    height: 58px;
-    margin: 0px;
-    margin-top: 50px;
-  }
+.slide__user img {
+  width: 58px;
+  height: 58px;
+  margin: 0px;
+  margin-top: 50px;
+}
 
-  .slide__user__info {
-    text-align: center;
-    line-height: normal;
-  }
+.slide__user__info {
+  text-align: center;
+  line-height: normal;
+}
 
-  .slide .slide__content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    order: 2;
-  }
+.slide .slide__content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 2;
+}
 
-  .slide__content img {
-    background: #fff;
-    border: 1px solid #9b9bca;
-    transform: translateY(10%);
-  }
+.slide__content img {
+  background: #fff;
+  border: 1px solid #9b9bca;
+  transform: translateY(10%);
+}
 
-  .slide__content p {
-    width: 100%;
-    text-align: center;
-  }
+.slide__content p {
+  width: 100%;
+  text-align: center;
+}
 
-  /*
+/*
 =====================================================
                     Login section
 ===================================================== */
-  .login {
-    margin-top: 100px;
-  }
+.login {
+  margin-top: 100px;
+}
 
-  .login__form {
-    width: 100%;
-    padding: 0 10px;
-  }
+.login__form {
+  width: 100%;
+  padding: 0 10px;
+}
 
-  .login__form fieldset {
-    margin: 60px 0;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+.login__form fieldset {
+  margin: 60px 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-  .login__form label:first-child {
-    margin-top: inherit;
-  }
+.login__form label:first-child {
+  margin-top: inherit;
+}
 
-  .login__form input {
-    width: 100%;
-  }
+.login__form input {
+  width: 100%;
+}
 
-  .login__form input::placeholder,
-  .login__form input:focus,
-  .login__form input:active {
-    font-size: 14px;
-  }
+.login__form input::placeholder,
+.login__form input:focus,
+.login__form input:active {
+  font-size: 14px;
+}
 
-  .login__form p {
-    font-size: 16px;
-  }
+.login__form p {
+  font-size: 16px;
+}
 
-  /*
+/*
 =====================================================
                     Footer section
 ===================================================== */
-  .footer {
-    height: auto;
-  }
+.footer {
+  height: auto;
+}
 
-  .top__footer {
-    flex-direction: column;
-    transform: translateY(0);
-  }
-  .top__footer ul {
-    margin-top: 30px;
-  }
+.top__footer {
+  flex-direction: column;
+  transform: translateY(0);
+}
+.top__footer ul {
+  margin-top: 30px;
+}
 
-  .sub__footer {
-    align-items: center;
-    transform: translateY(0);
-    padding: 0 20px;
-    flex-wrap: wrap;
-  }
+.sub__footer {
+  align-items: center;
+  transform: translateY(0);
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
 
-  .sub__footer__right img {
-    margin: 30px 0px;
-  }
-  .sub__footer__right a.logo {
-    align-self: flex-end;
-    margin-top: 70px;
-  }
+.sub__footer__right img {
+  margin: 30px 0px;
+}
+.sub__footer__right a.logo {
+  align-self: flex-end;
+  margin-top: 70px;
 }
