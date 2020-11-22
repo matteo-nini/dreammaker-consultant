@@ -129,9 +129,35 @@ function loadMore() {
 //change slide function
 function changeSlide() {
   let slide = document.querySelector(".slide");
-  slide.classList.add("active");
+  let slideOut = [
+    { transform: "translate(20%, 0%)" },
+    { opacity: "0.8" },
+    { transform: "translate(50%, 0%)" },
+    { opacity: "0.5" },
+    { transform: "translate(70%, 0%)" },
+    { opacity: "0.3" },
+    { transform: "translate(100%, 0%)" },
+    { opacity: "0" },
+    { transform: "translate(-100%, 0%)" },
+    { opacity: "0" },
+    { transform: "translate(-70%, 0%)" },
+    { opacity: "0.3" },
+    { transform: "translate(-50%, 0%)" },
+    { opacity: "0.5" },
+    { transform: "translate(-20%, 0%)" },
+    { opacity: "0.2" },
+    { transform: "translate(0%, 0%)" },
+    { opacity: "1" },
+  ];
+  let slideIn = [
+    { transform: "translate(-100%, 0%)" },
+    { opacity: "1" },
+    { transform: "translate(0%, 0%)" },
+  ];
+
+  slide.animate(slideOut, 1000);
   n++;
-  slide.classList.add("active");
+
   if (n > names.length - 1) n = 0;
   document.slide__user__avatar.src = avatars[n];
   userName.innerHTML = `${names[n]}`;

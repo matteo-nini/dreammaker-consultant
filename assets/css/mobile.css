@@ -72,7 +72,7 @@
     align-items: center;
   }
 
-  .services .containerCenter {
+  .services .container {
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -141,7 +141,7 @@
     width: 100%;
   }
 
-  .questions .containerCenter {
+  .questions .container {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
@@ -192,7 +192,7 @@
                     Features section
 ===================================================== */
 
-  .features .containerCenter {
+  .features .container {
     flex-direction: column;
   }
 
@@ -216,7 +216,7 @@
     margin: -250px 0px 0;
   }
 
-  .reviews .containerCenter {
+  .reviews .container {
     align-items: center;
     top: 0px;
   }

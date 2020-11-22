@@ -21,10 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="canonical" href="https://dreammakerconsultant.netlify.app/" />
     <link rel="icon" href="assets/images/svg/logo.svg">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/standards.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/52a284850e.js" crossorigin="anonymous"></script>
 </head>
@@ -68,7 +65,7 @@
             <p>when carrying out freight transport.  In fact, it is a</p> 
             <p>prerequisite for doing business traffic at all.</p>
         </div>
-        <div class="containerCenter flex flex-center-x">
+        <div class="container flex flex-center-x">
             <div class="services__box">
                 <img src="./assets/images/svg/services/web_design.svg" alt="Web Design" >
                 <h3>Web design</h3>
@@ -93,7 +90,7 @@
     </section>
 
     <!-- people section -->
-    <section class="people containerCenter flex flex-center-x flex-center-y">
+    <section class="people container flex flex-center-x flex-center-y">
             <div class="people__content">
                 <h3>The People are quick turnaround here</h3>
                 <p>The occupational traffic permit is one of the most <br>
@@ -108,14 +105,15 @@
 
     <!-- video section -->
     <section class="video">
-        <div class="containerCenter"><h1>First see how to expand <br> or our demo </h1></div>
+        <div class="container"><h1>First see how to expand <br> or our demo </h1></div>
         <!--Video tag by code-->
-        <!--<video controls poster="assets/images/webp/video_poster.webp" id="video">
-        </video>-->
+        <video controls poster="assets/images/videos/video_poster.webp" id="video" width="120vw" height="780px">
+            <source src="assets/images/videos/sample.webm" type="video/webm">
+        </video>
         <!--video tag code by image-->
-        <div class="video__poster flex flex-col flex-center-x flex-center-y">
+        <!--<div class="video__poster flex flex-col flex-center-x flex-center-y">-->
             <!-- controls of video tag works with javascript-->
-            <button id="playpause" title="play" onclick="togglePlayPause()"><i class="fas fa-play fa-3x"></i></button>
+            <!--<button id="playpause" title="play" onclick="togglePlayPause()"><i class="fas fa-play fa-3x"></i></button>
             <div id="controls" class="flex flex-center-x flex-center-y">  
                 <img src="/assets/images/svg/icons/video_controls/prew.svg" alt="prew">
                 <img src="/assets/images/svg/icons/video_controls/play.svg" alt="play">
@@ -124,13 +122,13 @@
                 <img src="/assets/images/svg/icons/video_controls/repeat.svg" alt="repeat">
                 <img src="/assets/images/svg/icons/video_controls/shuffle.svg" alt="shuffle">
             </div>
-        </div>       
+        </div> -->      
     </section>
 
     <!-- Q&A section -->
     <section class="questions">
         <h1 class="questions__title">Your Questions and <br> Answers is always ready:</h1>
-            <div class="containerCenter flex">
+            <div class="container flex">
                 <div class="man">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="animate__animated animate__pulse animate__infinite animate__slower">
                         <path fill="#F5F5FF" d="M46.9,-80.5C60.7,-73.3,71.6,-60.5,80,-46.1C88.4,-31.8,94.1,-15.9,93.4,-0.4C92.6,15,85.3,30.1,77,44.4C68.6,58.8,59.2,72.5,46.2,80.5C33.2,88.5,16.6,90.9,0,90.8C-16.5,90.7,-33,88.2,-46.4,80.4C-59.8,72.6,-70.1,59.5,-77,45.2C-83.9,30.9,-87.5,15.5,-87.7,-0.2C-88,-15.8,-85,-31.5,-77.2,-44.3C-69.3,-57,-56.7,-66.7,-43.1,-74.1C-29.4,-81.4,-14.7,-86.4,0.9,-88C16.6,-89.6,33.1,-87.8,46.9,-80.5Z" transform="translate(100 100)" />
@@ -232,7 +230,7 @@
         <h3>Best Feature in the world</h3>
             <p>Here you get the best featured in the world and you can do the best thing</p>
                 <p>when carrying out freight transport.  In fact, it is a</p>
-        <div class="containerCenter flex flex-center-x">
+        <div class="container flex flex-center-x">
             <div class="features__box">
                 <img src="assets/images/webp/features_section/customer_feature.webp" alt="customer">
                 <h3>Customer</h3>
@@ -259,14 +257,14 @@
         <!-- Woman bg -->
         <img src="assets/images/svg/reviews/blob_bg.svg" alt="background" class="reviews__background animate__animated animate__pulse animate__infinite animate__slower">
         <img name="review__bg__user" src="assets/images/webp/reviews_section/review_woman.webp" alt="woman" class="reviews__bg__user">
-            <div class="containerCenter flex flex-col">
+            <div class="container flex flex-col">
                 <div class="reviews__text">
                     <h3>Best Feature in the world</h3>
                     <p>Here you get the best featured in the world and you can do the best thing</p>
                     <p>when carrying out freight transport.  In fact, it is a</p>
                 </div>
                 <!-- Slider -->
-                <div class="reviews__slider slide__active">
+                <div class="reviews__slider">
                     <div class="slide flex flex-col">
                         <div class="slide__content flex">
                             <p></p>
@@ -288,7 +286,7 @@
     <!-- login section -->
     <a name="Contact" class="anchor"></a>
     <section class="login">
-        <div class="containerCenter">
+        <div class="container">
             <h1>Please join with us & get <br>
                 all kind of benifit</h1>
                 <form class="login__form" onsubmit="formValidate()" method="GET">
@@ -309,7 +307,7 @@
 
     <!-- footer section -->
     <footer class="footer">
-        <div class="top__footer containerCenter flex">
+        <div class="top__footer container flex">
             <ul>
                 <span class="footer__list__title">Learn More</span>
                 <a href="#"><li>Buy Now</li></a>
