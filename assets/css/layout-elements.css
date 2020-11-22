@@ -138,7 +138,9 @@
   box-shadow: 0px 25px 59px rgba(191, 191, 236, 0.72);
   border-radius: 10px;
   z-index: 0;
-  height: auto;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
 
 /* Features box */

@@ -81,11 +81,21 @@ function mobileNavShowClose() {
 
 //Accordion menu for questions function
 function accordionMenu(question) {
+  let keyframes = [
+    { opacity: "0" },
+    { height: "auto" },
+    { height: "auto" },
+    { opacity: "1" },
+  ];
   let answer = question.currentTarget.nextElementSibling;
   question.currentTarget.classList.toggle("expanded");
-  if (answer.classList.contains("no-disp")) {
+  if (answer.classList.contains("no-disp") && !answer.style.maxHeight) {
     answer.classList.remove("no-disp");
-  } else answer.classList.add("no-disp");
+    answer.style.maxHeight = answer.scrollHeight + "px";
+  } else {
+    answer.classList.add("no-disp");
+    answer.style.maxHeight = null;
+  }
 }
 
 //Load more questions button function
@@ -151,11 +161,6 @@ function changeSlide() {
     { transform: "translate(0%, 0%)" },
     { opacity: "1" },
   ];
-  let slideIn = [
-    { transform: "translate(-100%, 0%)" },
-    { opacity: "1" },
-    { transform: "translate(0%, 0%)" },
-  ];
 
   slide.animate(slideOut, 1000);
   n++;
@@ -190,10 +195,12 @@ function formValidate(event) {
   } else {
     name.style.border = "1px solid #00B1BD";
     name.style.color = "#00B1BD";
-    Error[0].style.color = "#00B1BD";
     password.style.border = "1px solid #00B1BD";
     password.style.color = "#00B1BD";
+    Error[0].style.color = "#00B1BD";
+    Error[0].innerHTML = "Ok!";
     Error[1].style.color = "#00B1BD";
+    Error[1].innerHTML = "Ok!";
     return true;
   }
 }
