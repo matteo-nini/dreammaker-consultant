@@ -10,6 +10,7 @@ section {
 .landing {
   height: auto;
   padding-bottom: 0px;
+  padding-top: 130px;
 }
 
 .landing__nav {
@@ -83,6 +84,10 @@ section {
 
 .people {
   flex-direction: column;
+}
+
+.people__content {
+  margin: 0;
 }
 
 .people__network {
@@ -261,7 +266,7 @@ video {
 .slide__content img {
   background: #fff;
   border: 1px solid #9b9bca;
-  transform: translateY(10%);
+  margin-bottom: auto;
 }
 
 .slide__content p {
