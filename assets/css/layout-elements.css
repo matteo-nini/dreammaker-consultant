@@ -109,6 +109,7 @@
   z-index: 1;
   transition: 0.4s;
   box-shadow: 0px 20px 40px #f5f5ff;
+  font-weight: 400;
 }
 
 .question::after {
