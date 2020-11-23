@@ -16,25 +16,21 @@ const avatars = [
   "assets/images/webp/reviews_section/review_woman.webp",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSz1xGnb3ehO7hFlcx6InC4Km8V5pPo52e5HA&usqp=CAU",
   "https://deascuola-nephila-bucket-prod.s3.amazonaws.com/filer_public_thumbnails/filer_public/33/7e/337ef584-09cf-48c4-9ab5-509c28c451b6/esamestato2020_prof_donna.png__950x0_q85_crop_subsampling-2.png",
-];
+]; //array of avatars
 const reviews = [
   "From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS) who can generate and certify the traffic control plan.",
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur aliquam eos cumque amet, neque ducimus velit quo explicabo? Temporibus vero enim aspernatur ipsa sint fuga! Sapiente inventore iure hic!",
   "From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS). <br><br>Some other text here.",
-];
+]; // array of reviews
 
-const ratings = [
-  "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i> 3 star",
-  "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i> 5 star",
-  "<i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i> 4 star",
-];
+const star = " <i class='fas fa-star'></i> "; //string for the star char
+let n = 0; //index
 
-var n = 0; //index
-//document.review__bg__user.src = avatars[n]; //img of user in background
+//Inizialize contents
 document.slide__user__avatar.src = avatars[n]; //img of user in slide
 userName.innerHTML = `${names[n]}`;
 userReview.innerHTML = `${reviews[n]}`;
-userRating.innerHTML = `${ratings[1]}`;
+userRating.innerHTML = `${star.repeat(5) + 5} star`;
 
 //Events Listeners
 
@@ -115,7 +111,6 @@ function loadMore() {
   ];
 
   const questions = document.querySelectorAll(".questions__list");
-  console.log(questions[0]);
 
   for (let i = 0; i < 5; i++) {
     let newBox = document.createElement("div");
@@ -141,6 +136,7 @@ function loadMore() {
 //change slide function
 function changeSlide() {
   let slide = document.querySelector(".slide");
+
   let slideOut = [
     { transform: "translate(20%, 0%)" },
     { opacity: "0.8" },
@@ -164,12 +160,11 @@ function changeSlide() {
 
   slide.animate(slideOut, 1000);
   n++;
-
   if (n > names.length - 1) n = 0;
   document.slide__user__avatar.src = avatars[n];
   userName.innerHTML = `${names[n]}`;
   userReview.innerHTML = `${reviews[n]}`;
-  userRating.innerHTML = `${ratings[n]}`;
+  userRating.innerHTML = `${star.repeat(n + 1) + (n + 1)} star`;
 }
 
 //Form validation function
@@ -177,7 +172,7 @@ function formValidate(event) {
   let name = document.querySelector("#name");
   let password = document.querySelector("#password");
   let Error = document.querySelectorAll(".login__form__validate");
-  var ck_password = /^[A-Za-z0-9]{8,12}$/;
+  let ck_password = new RegExp(/^[0-9a-zA-Z]{4,8}$/);
   event.preventDefault();
   if (name.value == "" || name.value == null) {
     name.focus();
@@ -185,20 +180,25 @@ function formValidate(event) {
     name.style.color = "#f01f35";
     Error[0].style.color = "#f01f35";
     Error[0].innerHTML = "Please, enter a valid name";
-  } else if (password.value == "" || !ck_password.test(password.value)) {
+  } else {
+    name.style.border = "1px solid #00B1BD";
+    name.style.color = "#00B1BD";
+    Error[0].style.color = "#00B1BD";
+    Error[0].innerHTML = "Ok!";
+  }
+  if (password.value == "" || !ck_password.test(password.value)) {
     password.focus();
     password.style.border = "2px solid #f01f35";
     password.style.color = "#f01f35";
     Error[1].style.color = "#f01f35";
-    Error[1].innerHTML =
-      "Your password must contains at least a letter and a number and must be between 8 and 12 characters";
+    Error[1].innerHTML = "Password must be long between 4 and 8";
   } else {
     name.style.border = "1px solid #00B1BD";
     name.style.color = "#00B1BD";
-    password.style.border = "1px solid #00B1BD";
-    password.style.color = "#00B1BD";
     Error[0].style.color = "#00B1BD";
     Error[0].innerHTML = "Ok!";
+    password.style.border = "1px solid #00B1BD";
+    password.style.color = "#00B1BD";
     Error[1].style.color = "#00B1BD";
     Error[1].innerHTML = "Ok!";
     return true;
